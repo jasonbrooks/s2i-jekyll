@@ -20,6 +20,10 @@ bundle config set path './bundle'
 
 bundle install --no-color
 
+pwd
+
+ls
+
 echo "---> Build the website ..."
 bundle exec jekyll build --verbose
 
