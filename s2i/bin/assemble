@@ -19,6 +19,8 @@ bundle config set path './.gem'
 bundle install --no-color
 
 echo "---> Build the website ..."
+
+export LANG="C.UTF-8"
 bundle exec jekyll build --verbose
 
 echo "---> Copy the website ..."
