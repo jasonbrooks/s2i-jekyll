@@ -12,7 +12,9 @@ cd src
 git submodule init && git submodule update
 echo "---> Install needed gems ..."
 
-bundle install --no-color --path ./bundle
+bundle config set path './bundle'
+
+bundle install --no-color
 
 echo "---> Build the website ..."
 bundle exec jekyll build --verbose
