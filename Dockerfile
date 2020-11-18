@@ -1,4 +1,4 @@
-FROM ubi8/s2i-base
+FROM s2i-base
 
 # This image provides a Ruby environment you can use to run your Ruby
 # applications.
