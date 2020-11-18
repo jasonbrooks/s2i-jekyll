@@ -3,17 +3,16 @@ set -e
 
 echo "---> Installing application source ..."
 
-mv /tmp/src/* ./
+#mv /tmp/src/* ./
 
 # don't use embedded libraries to build Nokogiri
 export NOKOGIRI_USE_SYSTEM_LIBRARIES=1
 
-git submodule init && git submodule update
+#git submodule init && git submodule update
+
+cd /tmp/src
+
 echo "---> Install needed gems ..."
-
-#bundle config set path './.bundle'
-
-bundle config --global path 'vendor/bundle'
 
 bundle install --no-color
 
