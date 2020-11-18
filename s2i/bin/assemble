@@ -20,4 +20,4 @@ echo "---> Build the website ..."
 bundle exec jekyll build --verbose
 
 echo "---> Copy the website ..."
-cp -Rf build /opt/app-root/build
+cp -Rf _site /opt/app-root/build
