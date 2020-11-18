@@ -11,7 +11,9 @@ export NOKOGIRI_USE_SYSTEM_LIBRARIES=1
 git submodule init && git submodule update
 echo "---> Install needed gems ..."
 
-bundle config set path './.bundle'
+#bundle config set path './.bundle'
+
+bundle config --global path vendor/bundle`
 
 bundle install --no-color
 
